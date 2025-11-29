@@ -1,6 +1,6 @@
 <p align="center">
-   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
-   <img src="https://github.com/ogbuaguwizard/Laravel-in-Shared-Hosting-Go54-Deployment-Guide/blob/main/shared_hosting.png" width="400" alt="Shared Hosting Image">
+   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="250" alt="Laravel Logo">
+   <img src="https://github.com/ogbuaguwizard/Laravel-in-Shared-Hosting-Go54-Deployment-Guide/blob/main/shared_hosting.png" height="100" alt="Shared Hosting Image">
 </p>
 
 # Laravel in Shared Hosting (Go54) Deployment Guide
