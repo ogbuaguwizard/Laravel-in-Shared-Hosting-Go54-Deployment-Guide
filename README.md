@@ -1,3 +1,8 @@
+<p align="center">
+   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
+   <img src="" width="400" alt="Shared Hosting Image">
+</p>
+
 # Laravel in Shared Hosting (Go54) Deployment Guide
 
 This document provides a step-by-step guide for deploying a Laravel application to a Go54 (or similar cPanel-based) shared hosting environment using GitHub Actions for Continuous Deployment (CD).
