@@ -118,9 +118,9 @@ Create FTP Account: In cPanel, go to "FTP Accounts" and create a dedicated FTP u
 
 **Add GitHub Secrets**: Go to your GitHub repository > Settings > Secrets and Variables > Actions, and add the following three secrets:
 
-1. FTP_SERVER: The hostname or IP address (e.g., ftp.example.com).
-2. FTP_USERNAME: The full FTP username.
-3. FTP_PASSWORD: The FTP user's password.
+1. `FTP_SERVER`: The hostname or IP address (e.g., ftp.example.com).
+2. `FTP_USERNAME`: The full FTP username.
+3. `FTP_PASSWORD`: The FTP user's password.
 
 ### 2. Create and Authorize SSH Key
 1. Generate Key: In cPanel, go to "SSH Access" or "SSH Keys."
@@ -129,11 +129,11 @@ Create FTP Account: In cPanel, go to "FTP Accounts" and create a dedicated FTP u
 4. Get Private Key: Download or copy the Private Key content, including the header and footer lines.
 
 **Create Github SSH Secrets**: Go to your GitHub repository > Settings > Secrets > Actions, and add the following secrets
-1. SSH_HOST: Your domain or server IP (e.g., example.com)
-2. SSH_USER: Your cPanel/SSH username.
-3. SSH_PRIVATE_KEY: The full content of the private key (including -----BEGIN...).
-4. SSH_PASSPHRASE: The password you set for the private key.
-5. DEPLOY_PATH: The absolute path on the server (e.g., /home2/username/public_html/laravelapp).
+1. `SSH_HOST`: Your domain or server IP (e.g., example.com)
+2. `SSH_USER`: Your cPanel/SSH username.
+3. `SSH_PRIVATE_KEY`: The full content of the private key (including -----BEGIN...).
+4. `SSH_PASSPHRASE`: The password you set for the private key.
+5. `DEPLOY_PATH`: The absolute path on the server (e.g., /home2/username/public_html/laravelapp).
 
 ### 3. Deployment Script (.github/workflows/deploy.yml)
 Do this locally. This script handles installation of composers dependencies, basic file transfer (the vendor/ folder and content will be created and uploaded to your deployment path automatically here so ensure to ignore it while pushing to Github) and execution of all necessary Laravel commands.
