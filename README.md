@@ -207,7 +207,12 @@ jobs:
             # Run migrations (use --force in production environments)
             php artisan migrate --force
             
-            # Clear configuration and route caches for the new deployment
+            # Clear and regenerate configuration and route caches for the new deployment
+            php artisan config:clear
+            php artisan route:clear
+            php artisan view:clear
+            php artisan cache:clear
+            
             php artisan config:cache
             php artisan route:cache
             php artisan view:cache
