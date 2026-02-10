@@ -55,11 +55,11 @@ cd /home2/username/public_html/laravelapp
 ```bash
 # Download the Composer installer script using curl.
 # We use curl instead of PHP copy() because allow_url_fopen is disabled on the server.
-curl -sS [https://getcomposer.org/installer](https://getcomposer.org/installer) -o composer-setup.php
+curl -sS https://getcomposer.org/installer -o composer-setup.php
 ```
 ```bash
 # Fetch the latest official installer SHA384 hash for security verification.
-HASH="$(curl -sS [https://composer.github.io/installer.sig](https://composer.github.io/installer.sig))"
+HASH="$(curl -sS https://composer.github.io/installer.sig)"
 ```
 ```bash
 # Verify that the downloaded installer matches the official signature.
