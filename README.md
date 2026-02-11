@@ -91,29 +91,8 @@ composer -V
 
 The .env file should NEVER be deployed via Git/FTP for security reasons. It must be created once on the server.
 
-First upload .env.example to the deployment root directory
-
-**Run the following commands in the server terminal**:
-
-```bash
-# Move to the directory
-cd /home2/username/public_html/laravelapp
-```
-```bash
-# Create the .env from .env.example
-cp .env.example .env
-```
-```bash
-# Generate a new APP_KEY which updates the .env automatically
-php artisan key:generate --force
-```
-In case the automatic APP_KEY generation fails use the below command
-```bash
-# Generate a new APP_KEY manually
-# Copy the output (e.g., base64:...) and update the APP_KEY in .env manually
-php -r "echo 'base64:'.base64_encode(random_bytes(32));"
-```
-Go ahead and update the other content of your .env file manually
+First upload .env to the deployment root directory
+make sure that the APP_KEY has been generated and set for your production
 
 ## Phase 2: GitHub Deployment (FTP)
 This sets up the file transfer and SSH step to execute all necessary Laravel commands.
